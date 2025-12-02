@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.AspNetCore.Http.Features;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Hosting; 
 using System.Security.Cryptography;
 using System.Text.Json;
 using System.Threading.Tasks;
@@ -349,7 +349,6 @@ public class Program
         public string Email { get; set; } = "";
         public DateTime RegistrationDate { get; set; } = DateTime.UtcNow;
     }
-
     public class UserDto
     {
         public string Username { get; set; } = "";
@@ -357,7 +356,6 @@ public class Program
         public string Password { get; set; } = "";
         public string ConfirmPassword { get; set; } = ""; 
     }
-
     public class LoginDto
     {
         public string Identifier { get; set; } = ""; // Логин или Email
