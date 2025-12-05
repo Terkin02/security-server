@@ -48,7 +48,7 @@ public class Program
                 services.Configure<ForwardedHeadersOptions>(options =>
                 {
                     options.ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto;
-                    options.KnownNetworks.Clear();
+                    //options.KnownNetworks.Clear();
                     options.KnownProxies.Clear();
                 });
             });
@@ -291,8 +291,13 @@ public class Program
             byte[] salt = new byte[SaltSize];
             rng.GetBytes(salt);
 
-            var pbkdf2 = new Rfc2898DeriveBytes(password, salt, Iterations, HashAlgorithmName.SHA256);
-            byte[] hash = pbkdf2.GetBytes(KeySize);
+            byte[] hash = Rfc2898DeriveBytes.Pbkdf2(
+                password,
+                salt,
+                Iterations,
+                HashAlgorithmName.SHA256,
+                KeySize
+            );
 
             byte[] hashBytes = new byte[SaltSize + KeySize];
             Array.Copy(salt, 0, hashBytes, 0, SaltSize);
@@ -315,8 +320,13 @@ public class Program
             byte[] storedHashOnly = new byte[KeySize];
             Array.Copy(hashBytes, SaltSize, storedHashOnly, 0, KeySize);
 
-            var pbkdf2 = new Rfc2898DeriveBytes(inputPassword, salt, Iterations, HashAlgorithmName.SHA256);
-            byte[] inputHash = pbkdf2.GetBytes(KeySize);
+            byte[] inputHash = Rfc2898DeriveBytes.Pbkdf2(
+                inputPassword,
+                salt,
+                Iterations,
+                HashAlgorithmName.SHA256,
+                KeySize
+            );
 
             return CryptographicOperations.FixedTimeEquals(inputHash, storedHashOnly);
         }
