@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -70,6 +70,7 @@ public class Program
                 app.UseForwardedHeaders();
                 app.UseHsts();
                 app.UseHttpsRedirection();
+                app.UseStaticFiles();
 
                 app.Use(async (context, next) =>
                 {

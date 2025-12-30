@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Terkin\\Downloads\\vscoding\\NetServer\\Backend\\Backend.csproj",
-      "projectName": "Backend",
-      "projectPath": "C:\\Users\\Terkin\\Downloads\\vscoding\\NetServer\\Backend\\Backend.csproj",
+      "projectUniqueName": "C:\\Users\\Terkin\\Downloads\\vscoding\\NetServer\\Backend\\Backen.csproj",
+      "projectName": "Backen",
+      "projectPath": "C:\\Users\\Terkin\\Downloads\\vscoding\\NetServer\\Backend\\Backen.csproj",
       "packagesPath": "C:\\Users\\Terkin\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Terkin\\Downloads\\vscoding\\NetServer\\Backend\\obj\\",
       "projectStyle": "PackageReference",
