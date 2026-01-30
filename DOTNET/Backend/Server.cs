@@ -143,7 +143,7 @@ public class Program
                                 return;
                             }
 
-                            // 4. ПРОВЕРКА НИКНЕЙМА (Теперь обязателен, но проверка длины и уникальности все равно нужна)
+                            // 4. ПРОВЕРКА НИКНЕЙМА (Обязателен)
                             
                             if (userDto.Username.Length < 3)
                             {
@@ -248,7 +248,7 @@ public class Program
             });
         });
 
-    // --- БЕЗОПАСНОСТЬ И ВАЛИДАЦИЯ (без изменений) ---
+    // --- БЕЗОПАСНОСТЬ И ВАЛИДАЦИЯ ---
     private const int SaltSize = 16;
     private const int KeySize = 32;
     private const int Iterations = 100000;
