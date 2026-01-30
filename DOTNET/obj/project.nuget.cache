@@ -1,0 +1,52 @@
+{
+  "version": 2,
+  "dgSpecHash": "9R3taRIYnP0=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Terkin\\Downloads\\vscoding\\NetServer\\DOTNET\\Dotnet.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Terkin\\.nuget\\packages\\microsoft.aspnetcore.signalr\\1.2.0\\microsoft.aspnetcore.signalr.1.2.0.nupkg.sha512",
+    "C:\\Users\\Terkin\\.nuget\\packages\\microsoft.extensions.hosting\\10.0.1\\microsoft.extensions.hosting.10.0.1.nupkg.sha512",
+    "C:\\Users\\Terkin\\.nuget\\packages\\pipelines.sockets.unofficial\\2.2.8\\pipelines.sockets.unofficial.2.2.8.nupkg.sha512",
+    "C:\\Users\\Terkin\\.nuget\\packages\\stackexchange.redis\\2.10.1\\stackexchange.redis.2.10.1.nupkg.sha512",
+    "C:\\Users\\Terkin\\.nuget\\packages\\system.io.hashing\\9.0.10\\system.io.hashing.9.0.10.nupkg.sha512",
+    "C:\\Users\\Terkin\\.nuget\\packages\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1510",
+      "level": "Warning",
+      "message": "PackageReference Microsoft.AspNetCore.SignalR не будет урезано. Рассмотрите возможность удаления этого пакета из зависимостей, так как он, вероятно, не требуется.",
+      "projectPath": "C:\\Users\\Terkin\\Downloads\\vscoding\\NetServer\\DOTNET\\Dotnet.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\Terkin\\Downloads\\vscoding\\NetServer\\DOTNET\\Dotnet.csproj",
+      "libraryId": "Microsoft.AspNetCore.SignalR",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1510",
+      "level": "Warning",
+      "message": "PackageReference Microsoft.Extensions.Hosting не будет урезано. Рассмотрите возможность удаления этого пакета из зависимостей, так как он, вероятно, не требуется.",
+      "projectPath": "C:\\Users\\Terkin\\Downloads\\vscoding\\NetServer\\DOTNET\\Dotnet.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\Terkin\\Downloads\\vscoding\\NetServer\\DOTNET\\Dotnet.csproj",
+      "libraryId": "Microsoft.Extensions.Hosting",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1510",
+      "level": "Warning",
+      "message": "PackageReference System.Linq не будет урезано. Рассмотрите возможность удаления этого пакета из зависимостей, так как он, вероятно, не требуется.",
+      "projectPath": "C:\\Users\\Terkin\\Downloads\\vscoding\\NetServer\\DOTNET\\Dotnet.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\Terkin\\Downloads\\vscoding\\NetServer\\DOTNET\\Dotnet.csproj",
+      "libraryId": "System.Linq",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
+}
