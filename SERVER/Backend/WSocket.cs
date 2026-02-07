@@ -19,14 +19,11 @@ public class WSocket
     }
 public class ChatHub : Hub
 {   
-    private const string BotUser = "👀Собеседник";
-    private const string BotMessage = "👋"; 
+
     public async Task SendMessage(string user, string message)
     {
         Console.WriteLine($"[HUB] Message received from {user}: {message}");
         await Clients.All.SendAsync("ReceiveMessage", user, message);
-        await Task.Delay(500);
-        await Clients.All.SendAsync("ReceiveMessage", BotUser, BotMessage);
     }
 
     public override Task OnConnectedAsync()

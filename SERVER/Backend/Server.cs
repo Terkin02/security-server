@@ -15,6 +15,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.SignalR;
 using StackExchange.Redis;
 using System.Data;
+
 public class Program
 {
     // Хранилище пользователей
@@ -76,7 +77,6 @@ public class Program
                 app.UseForwardedHeaders();
                 app.UseHsts();
                 app.UseHttpsRedirection();
-                app.UseStaticFiles();
 
                 app.Use(async (context, next) =>
                 {
